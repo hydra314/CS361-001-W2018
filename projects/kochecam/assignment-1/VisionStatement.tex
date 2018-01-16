@@ -1,0 +1,66 @@
+
+%\documentclass[12pt,a4paper]{article}
+\documentclass[letterpaper,12pt,titlepage]{article}
+
+\usepackage{hyperref}
+\usepackage{listings}
+
+
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\title{Vision Statement: xDB}
+\author{Cameron Kocher (kochecam) and Luke Miletta (milettal)}
+
+\begin{document}
+\maketitle
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+\pagebreak
+
+\section{What is xDB?}
+It's no secret that quality software can change the world. Google, Yahoo, and other such search engines allow anyone with an Internet connection to access the entire catalog of human information with just a few keystrokes. Programs like Photoshop, iMovie, and GarageBand make it so that everyone has the ability to create art, regardless of their experience level or preferred medium. Social media giants like Facebook and Twitter allow people from all around the world to connect. While these famous programs, applications, and sites are undeniably useful, there exist thousands upon thousands of lesser-known tools that, despite their lack of notoriety, are incredibly valuable in their own right. Utility doesn't always translate to fame, though, and as such, many of these useful programs remain overlooked or hidden in obscurity. Our goal with xDB is to create a database of these useful sites, programs, and applications so that finding handy but obscure software is no longer a hassle.
+
+\section{Problem Statement}
+Different people in different locations lead different lives, and software accommodates for that. Some tools, like search engines and word processors, are useful no matter what; others, like add-ons that dim your computer screen when it gets later in the day, are a bit more niche. No matter what sort of life a person leads, there are bound to be existing applications that can make their life easier. Unfortunately, there are two common problems that many people run into when trying to find useful software:
+\subsection{They don't know that the tool, or anything like it, exists.}
+It's hard to find something if you don’t know it exists. This is not a problem that can easily be fixed; even techniques such as personalization aren't guaranteed to point users to the sites or applications that would help them out the most. This is especially true when a person is starting a new project, the likes of which they have never tried before; personalization algorithms aren't going to help an artist who's starting their first coding project, for example. Finding potential solutions to this problem requires extensive psychological and mathematical analysis, and as such, xDB will not focus on remedying it.
+\subsection{Finding the right tool is too difficult, too time-consuming, or both.}
+This is the main problem that xDB intends to solve. While there is certainly no shortage of online lists, videos, and question threads that aim to remedy this issue, having an easily searchable database containing keywords, user reviews, and download links would make the process of searching for a program that suits a specific purpose a lot less painful. As mentioned before, plenty of potentially life-changing software is already out there; the real problem nowadays is finding it.
+
+\section{Why does the world need xDB?}
+The problem that xDB aims to tackle isn't one that can really be represented statistically, considering the sheer amount of useful sites and programs that exist. Despite the lack of solid numbers, it's clear that the demand is high. Tech magazines often run articles on what the best applications are for a certain task, and YouTube videos containing the same sort of content are quite popular as well. Some of the most common questions on reddit's prominent AskReddit board involve the subject as well: “What is your favorite app?” and “What website is not very well known, but is insanely helpful?” are among the top posts in the board's history, with each receiving tens of thousands of upvotes and several thousand comments. It's also an issue I've personally faced time and time again while working on projects, whether they've been for school, work, or simply personal amusement. I encountered it when I was a novice programmer, trying to find a simple yet effective IDE. I encountered it when I needed a database for my first website. And, of course, I encounter it every few weeks when I need a new mobile game to keep me entertained while I'm waiting for class to start. It's a problem that everyone's faced, and few would agree that sifting through dozens of articles, top ten lists, and videos is an effective use of time.
+
+\section{Functionality}
+xDB will be comprised of three parts: a web crawler, a database, and a web app that allows users of any experience level to access and utilize the database. 
+The web crawler's job is to collect all the information it can on the sites it visits and feed that information into the database. While it will significantly lighten the workload for anyone working on populating and maintaining the database, xDB will still require a large amount of human help when it comes to quality control and filling in any blank spaces. 
+The database will include, but will not be limited to, the following categories:
+\begin{itemize}
+	\item Product name
+	\item Product description
+	\item URL (may connect to the Google Play Store or the iOS App Store)
+	\item Download link(s)
+	\item User ratings
+	\item User comments
+	\item Tutorial link(s)
+	\item Keywords to allow for searching
+	\item Date of last update
+	\item Author/creator
+\end{itemize}
+
+The web app will function like any other database-searching site. A search bar and several filters will be available, and users will be able to sort by every column in ascending or descending order (e.g. newest to oldest). The web app will also allow for user contributions and feedback. Users will be able to submit ratings and comments on any given search result, which will then be saved into the database to provide a more detailed outline of the product to future users. In addition, users will be able to suggest sites and programs, which will be reviewed and potentially added to the database. 
+xDB's purpose is to function as sort of a cross between an app store and a search engine. Both of these systems have their perks, but they both have their limitations as well. App stores are often limited to a single platform, which means that iOS users often miss out on some great Android apps, and vice versa. xDB can be seen as a cross-platform app store, though its inclusion of websites and computer programs make it even more useful than that description would suggest. While xDB may draw comparisons to search engines, its smaller scope actually helps it out in that regard. As xDB focuses on software, it provides few to zero extraneous results from social media or news sites. 
+
+\section{Requirements and Potential Issues}
+xDB requires relatively little on the software side. The web crawler and web app will be simple enough to build, while the database can be hosted on any quality database program - DynamoDB or MySQL, for example. As mentioned before, though, populating and maintaining the database will require a rather significant amount of time and energy, and may not even be possible for a small team. This is not a major, game-changing risk, however; xDB will ideally be a constantly evolving tool, and as such, the version that is released at launch doesn't need to be comprehensive. User contributions will constantly be expanding the database, so the only aspect of xDB that absolutely must be working at launch is the web app. Filling in the database is secondary, as the web crawler, development team, and public will all work together to accomplish this task.
+
+While xDB has no shortage of positive aspects, it is not without its shortcomings. It will rely somewhat heavily on user input, which is often biased and/or uninformed; it will require a significant amount of time and work to create and maintain, as there are bound to be several things that the web crawler simply won't be able to pick up (such as product descriptions and certain keywords); and, ironically, it will suffer from the problem it attempts to solve - obscurity - unless it becomes a well-known utility. 
+
+\end{document}
+
